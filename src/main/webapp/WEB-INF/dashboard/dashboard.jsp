@@ -68,7 +68,6 @@
                                                 <c:out value="${utils.formatInteger(tile.amount)}"/>
                                             </c:otherwise>
                                         </c:choose>
-
                                     </div>
                                 </div>
                             </a>
