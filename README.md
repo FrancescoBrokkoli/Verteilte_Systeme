@@ -11,9 +11,6 @@ ausgelegten Applikationsserver. Sämtliche Anwendungslogik wird dabei vom Server
 implementiert, so dass für jedes URL-Pattern der Anwendung ein komplett serverseitig
 generierte HTML-Seite abgerufen und im Browser dargestellt wird.
 
-Die Anwendung kann an folgender Stelle online betrachtet werden:
-https://www.wpvs.de/jTodo/
-
 Verwendete Technologien
 -----------------------
 
