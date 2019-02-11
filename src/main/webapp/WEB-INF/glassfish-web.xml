@@ -4,8 +4,8 @@
     <context-root>/jtodo</context-root>
     
     <security-role-mapping>
-        <role-name>todo-app-user</role-name>
-        <group-name>todo-app-user</group-name>
+        <role-name>app-user</role-name>
+        <group-name>app-user</group-name>
     </security-role-mapping>
     
     <class-loader delegate="true"/>
