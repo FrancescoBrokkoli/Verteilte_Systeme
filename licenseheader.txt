@@ -1,13 +1,13 @@
 <#if licenseFirst??>
 ${licenseFirst}
 </#if>
-${licensePrefix}Copyright © ${date?date?string("yyyy")} Dennis Schulmeister-Zimolong
+${licensePrefix}Copyright © ${date?date?string("yyyy")} Florian Geyer, Moritz Bielefeld
 ${licensePrefix}
 ${licensePrefix}E-Mail: dhbw@windows3.de
 ${licensePrefix}Webseite: https://www.wpvs.de/
 ${licensePrefix}
 ${licensePrefix}Dieser Quellcode ist lizenziert unter einer
-${licensePrefix}Creative Commons Namensnennung 4.0 International Lizenz.
+${licensePrefix} Intimmeat der rigorosen Ultrafalken
 <#if licenseLast??>
 ${licenseLast}
 </#if>
