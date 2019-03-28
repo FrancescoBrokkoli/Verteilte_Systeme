@@ -1,11 +1,8 @@
 <%-- 
-    Copyright © 2018 Dennis Schulmeister-Zimolong
+    Copyright © 2019 Florian Geyer, Moritz Bielefeld
 
-    E-Mail: dhbw@windows3.de
-    Webseite: https://www.wpvs.de/
-
-    Dieser Quellcode ist lizenziert unter einer
-    Creative Commons Namensnennung 4.0 International Lizenz.
+    Dieser Quellcode ist lizenziert unter 
+    Intimmeat
 --%>
 <%@tag pageEncoding="UTF-8"%>
 
@@ -39,7 +36,7 @@
             <%-- Titelzeile --%>
             <div id="titlebar">
                 <div class="appname">
-                    Aufgabenliste
+                    Record Collecta
                 </div>
                 <div class="content">
                     ${title}

@@ -15,7 +15,7 @@
 
 <template:base>
     <jsp:attribute name="title">
-        Liste der Aufgaben
+        Liste deiner Platten
     </jsp:attribute>
 
     <jsp:attribute name="head">
@@ -28,7 +28,7 @@
         </div>
 
         <div class="menuitem">
-            <a href="<c:url value="/app/tasks/task/new/"/>">Aufgabe anlegen</a>
+            <a href="<c:url value="/app/tasks/task/new/"/>">Platte anlegen</a>
         </div>
 
         <div class="menuitem">
@@ -70,20 +70,20 @@
         <c:choose>
             <c:when test="${empty tasks}">
                 <p>
-                    Es wurden keine Aufgaben gefunden. 🐈
+                    Kauf dir mehr Platten. 🐈
                 </p>
             </c:when>
             <c:otherwise>
-                <jsp:useBean id="utils" class="dhbwka.wwi.vertsys.javaee.jtodo.common.web.WebUtils"/>
+                <jsp:useBean id="utils" class="dhbwka.wwi.vertsys.javaee.recordcollecta.common.web.WebUtils"/>
                 
                 <table>
                     <thead>
                         <tr>
-                            <th>Bezeichnung</th>
-                            <th>Kategorie</th>
+                            <th>Künstler</th>
+                            <th>Format</th>
                             <th>Eigentümer</th>
-                            <th>Status</th>
-                            <th>Fällig am</th>
+                            <th>Genre</th>
+                            <th>Jahr der Pressung</th>
                         </tr>
                     </thead>
                     <c:forEach items="${tasks}" var="task">
@@ -96,7 +96,7 @@
                             <td>
                                 <c:out value="${task.category.name}"/>
                             </td>
-                            <td>
+                             <td>
                                 <c:out value="${task.owner.username}"/>
                             </td>
                             <td>
@@ -104,7 +104,6 @@
                             </td>
                             <td>
                                 <c:out value="${utils.formatDate(task.dueDate)}"/>
-                                <c:out value="${utils.formatTime(task.dueTime)}"/>
                             </td>
                         </tr>
                     </c:forEach>

@@ -17,10 +17,10 @@
     <jsp:attribute name="title">
         <c:choose>
             <c:when test="${edit}">
-                Aufgabe bearbeiten
+                Platte bearbeiten
             </c:when>
             <c:otherwise>
-                Aufgabe anlegen
+                Platte anlegen
             </c:otherwise>
         </c:choose>
     </jsp:attribute>
@@ -65,16 +65,16 @@
                 </div>
 
                 <label for="task_due_date">
-                    Fällig am:
-                    <span class="required">*</span>
+                    Jahr der Pressung:
+                    <span class="required"></span>
                 </label>
                 <div class="side-by-side">
                     <input type="text" name="task_due_date" value="${task_form.values["task_due_date"][0]}">
-                    <input type="text" name="task_due_time" value="${task_form.values["task_due_time"][0]}">
+                   <%-- <input type="text" name="task_due_time" value="${task_form.values["task_due_time"][0]}"> --%>
                 </div>
 
                 <label for="task_status">
-                    Status:
+                    Genre:
                     <span class="required">*</span>
                 </label>
                 <div class="side-by-side margin">
@@ -88,15 +88,30 @@
                 </div>
 
                 <label for="task_short_text">
-                    Bezeichnung:
+                    Künstler:
                     <span class="required">*</span>
                 </label>
                 <div class="side-by-side">
                     <input type="text" name="task_short_text" value="${task_form.values["task_short_text"][0]}">
                 </div>
-
+                
+                
+                
+                <%-- Hier kommt der neue Albumtitel --%>
+                
+                <label for="task_short_text2">
+                    Albumtitel:
+                    <span class="required">*</span>
+                </label>
+                <div class="side-by-side">
+                    <input type="text" name="task_short_text2" value="${task_form.values["task_short_text2"][0]}">
+                </div>
+                
+                <%-- Hier endet der neue Albumtitel --%>
+                
+                
                 <label for="task_long_text">
-                    Beschreibung:
+                    Tracklist:
                 </label>
                 <div class="side-by-side">
                     <textarea name="task_long_text"><c:out value="${task_form.values['task_long_text'][0]}"/></textarea>
