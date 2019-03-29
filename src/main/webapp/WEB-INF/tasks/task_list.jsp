@@ -75,7 +75,7 @@
             </c:when>
             <c:otherwise>
                 <jsp:useBean id="utils" class="dhbwka.wwi.vertsys.javaee.recordcollecta.common.web.WebUtils"/>
-                
+
                 <table>
                     <thead>
                         <tr>

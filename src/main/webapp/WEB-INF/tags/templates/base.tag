@@ -1,7 +1,7 @@
 <%-- 
     Copyright © 2019 Florian Geyer, Moritz Bielefeld
 
-    Dieser Quellcode ist lizenziert unter 
+    Dieser Quellcode ist lizenziert unter
     Intimmeat
 --%>
 <%@tag pageEncoding="UTF-8"%>
@@ -20,7 +20,7 @@
         <meta charset="utf-8" />
 
         <title>Aufgabenliste: ${title}</title>
-        
+
         <!-- https://pixabay.com/de/flach-design-symbol-icon-www-2126884/ -->
         <link rel="shortcut icon" href="<c:url value="/img/favicon.png"/>">
 
@@ -56,7 +56,7 @@
         </header>
 
         <%-- Hauptinhalt der Seite --%>
-        <main>    
+        <main>
             <jsp:invoke fragment="content"/>
         </main>
     </body>

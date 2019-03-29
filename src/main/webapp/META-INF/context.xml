@@ -5,14 +5,14 @@
   <!-- LockOutRealm: Sperrt den Benutzer nach zu vielen Fehlversuchen aus -->
   <Realm className="org.apache.catalina.realm.LockOutRealm">
     <!-- Anwendungsspezifischer Auth-Mechanismus -->
-    <Realm className="org.apache.catalina.realm.DataSourceRealm" 
-           
-           dataSourceName="Default-Database-Unmanaged" 
+    <Realm className="org.apache.catalina.realm.DataSourceRealm"
+
+           dataSourceName="Default-Database-Unmanaged"
            userTable = "recordcollecta.recordcollecta_user"
            userNameCol= "username"
-           userCredCol="password_hash" 
-           
-           userRoleTable="recordcollecta.recordcollecta_user_group" 
+           userCredCol="password_hash"
+
+           userRoleTable="recordcollecta.recordcollecta_user_group"
            roleNameCol="groupname"
     >
       <CredentialHandler algorithm="SHA-256" className="org.apache.catalina.realm.MessageDigestCredentialHandler"/>

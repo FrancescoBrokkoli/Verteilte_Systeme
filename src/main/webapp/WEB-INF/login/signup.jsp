@@ -38,7 +38,7 @@
                     <input type="hidden" name="csrf_token" value="${csrf_token}">
 
                     <%-- Eingabefelder --%>
-                    
+
                     <label for="signup_vorname">
                         Vorname:
                     <span class="required">*</span>
@@ -46,9 +46,9 @@
                     <div class="side-by-side">
                         <input type="text" name="signup_vorname" value="${signup_form.values["signup_vorname"][0]}">
                     </div>
-                    
+
                     <label for="signup_name">
-                        Nachname:                  
+                        Nachname:
                     <span class="required">*</span>
                     </label>
                     <div class="side-by-side">

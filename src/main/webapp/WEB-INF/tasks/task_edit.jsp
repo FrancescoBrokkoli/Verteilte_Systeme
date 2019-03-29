@@ -33,7 +33,7 @@
         <div class="menuitem">
             <a href="<c:url value="/app/dashboard/"/>">Dashboard</a>
         </div>
-        
+
         <div class="menuitem">
             <a href="<c:url value="/app/tasks/list/"/>">Liste</a>
         </div>
@@ -94,11 +94,11 @@
                 <div class="side-by-side">
                     <input type="text" name="task_short_text" value="${task_form.values["task_short_text"][0]}">
                 </div>
-                
-                
-                
+
+
+
                 <%-- Hier kommt der neue Albumtitel --%>
-                
+
                 <label for="task_short_text2">
                     Albumtitel:
                     <span class="required">*</span>
@@ -106,10 +106,10 @@
                 <div class="side-by-side">
                     <input type="text" name="task_short_text2" value="${task_form.values["task_short_text2"][0]}">
                 </div>
-                
+
                 <%-- Hier endet der neue Albumtitel --%>
-                
-                
+
+
                 <label for="task_long_text">
                     Tracklist:
                 </label>
