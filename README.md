@@ -7,7 +7,7 @@ Kurzbeschreibung
 Diese Webanwendung hat den Zweck Vinyl-Liebhabern aller Welt zu ermöglichen, 
 ihre wertvollen Stücke zu dokumentieren und zu verwalten.
 Sie ist eine für eine in Java realisierte, serverseitige MVC-Webanwendung.
-Die Anwendung setzt dabei ganz klassisch auf der „Jakarta Enterprise Edition”
+Die Anwendung setzt dabei ganz klassisch auf der „Jakarta Enterprise Edition�?
 (ehemals „Java Enterprise Edition“) auf und läuft daher in einem speziell dafür
 ausgelegten Applikationsserver. Sämtliche Anwendungslogik wird dabei vom Server
 implementiert, so dass für jedes URL-Pattern der Anwendung ein komplett serverseitig
