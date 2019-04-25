@@ -23,15 +23,15 @@ public enum TaskStatus {
     public String getLabel() {
         switch (this) {
             case OPEN:
-                return "Hip Hop";
+                return "12 inch";
             case IN_PROGRESS:
-                return "Funk";
+                return "10 inch";
             case FINISHED:
-                return "Jazz";
+                return "7 inch";
             case CANCELED:
-                return "Rock";
+                return "EP";
             case POSTPONED:
-                return "Pop";
+                return "2LP";
             default:
                 return this.toString();
         }

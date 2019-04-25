@@ -51,10 +51,10 @@
                     <input type="text" name="task_owner" value="${task_form.values["task_owner"][0]}" readonly="readonly">
                 </div>
 
-                <label for="task_category">Kategorie:</label>
+                <label for="task_category">Genre</label>
                 <div class="side-by-side">
                     <select name="task_category">
-                        <option value="">Keine Kategorie</option>
+                        <option value="">Alle Genre</option>
 
                         <c:forEach items="${categories}" var="category">
                             <option value="${category.id}" ${task_form.values["task_category"][0] == category.id.toString() ? 'selected' : ''}>
@@ -74,7 +74,7 @@
                 </div>
 
                 <label for="task_status">
-                    Genre:
+                    Format:
                     <span class="required">*</span>
                 </label>
                 <div class="side-by-side margin">

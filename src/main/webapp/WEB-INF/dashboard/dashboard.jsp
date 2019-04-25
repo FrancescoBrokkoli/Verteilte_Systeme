@@ -32,7 +32,7 @@
         </div>
 
         <div class="menuitem">
-            <a href="<c:url value="/app/tasks/categories/"/>">Kategorien hinzufügen</a>
+            <a href="<c:url value="/app/tasks/categories/"/>">Genre bearbeiten</a>
         </div>
         <%-- Account verwalten kachel --%>
         <div class="menuitem">

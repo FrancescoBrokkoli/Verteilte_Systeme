@@ -32,7 +32,7 @@
         </div>
 
         <div class="menuitem">
-            <a href="<c:url value="/app/tasks/categories/"/>">Kategorien bearbeiten</a>
+            <a href="<c:url value="/app/tasks/categories/"/>">Genre bearbeiten</a>
         </div>
     </jsp:attribute>
 
@@ -42,7 +42,7 @@
             <input type="text" name="search_text" value="${param.search_text}" placeholder="Beschreibung"/>
 
             <select name="search_category">
-                <option value="">Alle Kategorien</option>
+                <option value="">Alle Genre</option>
 
                 <c:forEach items="${categories}" var="category">
                     <option value="${category.id}" ${param.search_category == category.id ? 'selected' : ''}>
@@ -52,7 +52,7 @@
             </select>
 
             <select name="search_status">
-                <option value="">Alle Stati</option>
+                <option value="">Alle Formate</option>
 
                 <c:forEach items="${statuses}" var="status">
                     <option value="${status}" ${param.search_status == status ? 'selected' : ''}>
