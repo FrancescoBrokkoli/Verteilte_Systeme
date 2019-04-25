@@ -13,6 +13,7 @@ import dhbwka.wwi.vertsys.javaee.recordcollecta.common.ejb.ValidationBean;
 import dhbwka.wwi.vertsys.javaee.recordcollecta.common.ejb.UserBean;
 import dhbwka.wwi.vertsys.javaee.recordcollecta.common.jpa.User;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import javax.ejb.EJB;
 import javax.servlet.RequestDispatcher;
@@ -60,8 +61,9 @@ public class SignUpServlet extends HttpServlet {
         
         // Eingaben prüfen
         User user = new User(username, password1);
-        List<String> errors = this.validationBean.validate(user);
-        this.validationBean.validate(user.getPassword(), errors);
+        List<String> errors = new ArrayList<String>();
+       // List<String> errors = this.validationBean.validate(user);
+        //this.validationBean.validate(user.getPassword(), errors);
         
         if (password1 != null && password2 != null && !password1.equals(password2)) {
             errors.add("Die beiden Passwörter stimmen nicht überein.");
