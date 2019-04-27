@@ -80,9 +80,9 @@
                     <thead>
                         <tr>
                             <th>Künstler</th>
-                            <th>Format</th>
-                            <th>Eigentümer</th>
                             <th>Genre</th>
+                            <th>Eigentümer</th>
+                            <th>Format</th>
                             <th>Jahr der Pressung</th>
                         </tr>
                     </thead>
