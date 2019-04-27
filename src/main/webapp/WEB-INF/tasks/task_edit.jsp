@@ -54,7 +54,7 @@
                 <label for="task_category">Genre:</label>
                 <div class="side-by-side">
                     <select name="task_category">
-                        <option value="">Alle Genre</option>
+                        <option value=""></option>
 
                         <c:forEach items="${categories}" var="category">
                             <option value="${category.id}" ${task_form.values["task_category"][0] == category.id.toString() ? 'selected' : ''}>
@@ -69,8 +69,8 @@
                     <span class="required"></span>
                 </label>
                 <div class="side-by-side">
-                    <input type="text" name="task_due_date" value="${task_form.values["task_due_date"][0]}">
-                   <%-- <input type="text" name="task_due_time" value="${task_form.values["task_due_time"][0]}"> --%>
+                    <input type="text" name="task_due_date" value="">
+                 <%--  <input type="text" name="task_due_time" value="${task_form.values["task_due_time"][0]}"> --%>
                 </div>
 
                 <label for="task_status">

@@ -63,10 +63,16 @@
     </div>
     <br>
      <div class="column margin">
-<label for="j_username">Username: </label>
-    <input type="text" name="name" value="${categories_form.values["name"][0]}">
-    </div>
-    
+         
+     
+         
+                <label for="task_owner">Username:</label>
+                <div class="side-by-side">
+                    <input type="text" name="task_owner" value="${task_form.values["task_owner"][0]}" readonly="readonly">
+                </div>
+                
+                
+                
             <%-- Fehlermeldungen --%>
             <c:if test="${!empty categories_form.errors}">
                 <ul class="errors margin">
